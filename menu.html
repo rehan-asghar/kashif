@@ -1,0 +1,619 @@
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" href="img/gl.png">
+            <link rel="stylesheet" href="css/font-awesome.css">
+
+ <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animated.css">
+
+
+<style type="text/css">
+  
+ 
+    .navbarr {
+    overflow: hidden;
+  background: linear-gradient(to left, #003366 18%, #0000ff 102%);
+    font-family: cursive;
+        margin-left: auto
+}
+
+.navbarr a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+
+    text-decoration: none;
+    
+
+    
+}
+    
+
+.dropdownn {
+    float: left;
+    overflow: hidden;
+background: linear-gradient(to left, #003366 18%, #0000ff 102%);
+}
+
+.dropdownn .dropbtn {
+    font-size: 14px;    
+
+    color: white;
+    padding: 14px 16px;
+    font-family:cursive;
+    margin: auto;
+background: linear-gradient(to left, #003366 18%, #0000ff 102%);
+    
+}
+
+.navbarr a:hover, .dropdownn:hover .dropbtn {
+background: linear-gradient(to left, #003366 18%, #0000ff 102%);
+
+        color:white;
+    font-size: 16px; 
+}
+
+.dropdownn-content {
+    display: none;
+    position: relative;
+
+
+    width: 70%;
+    left: 0;
+    z-index: 100;
+}
+    #navbarrr li a{ color: white;
+        font-size: 14px;
+        font-family:cursive;
+        display: block;
+        
+        
+    }
+     #navbarrr li a:hover{ 
+        font-size: 18px;
+        font-family:cursive;
+        
+        
+    }
+    #gly li a{
+        
+        color: white;
+        font-size: 14px;
+        font-family:cursive;
+        
+    }
+      #gly li a:hover{ 
+        font-size: 18px;
+        font-family:cursive;
+        
+        
+    }
+.dropdownn-content .header {
+background-color: #016F3A;
+    padding: 16px;
+    color: white;
+}
+
+.dropdownn:hover .dropdownn-content {
+    display: block;
+    margin-left:60px;
+    position:absolute;
+
+}
+
+
+.column {
+  float: left;
+    width: 32.32%;
+    padding:5px;
+background: linear-gradient(to left, #003366 18%, #0000ff 102%);
+   
+     
+    z-index:100;
+   
+
+  
+    height: auto;
+}
+
+    
+    
+
+
+.column a {
+    float: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    z-index:100;
+}
+
+.column a:hover {
+    background-color:#016F3A;
+}
+    .column h3 {
+        color: white;
+        font-style:italic;
+         text-align:center;
+    
+    }
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+
+
+@media screen and (max-width:700px) {
+    .column {
+        
+        width: 70%;
+        height: 100%;
+         text-align: center;
+        
+ 
+    }
+    .dropdownn:hover .dropdownn-content {
+    
+    position:absolute;
+    
+}
+    
+    .column a {
+    float: none;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+        text-align:center;}
+    .navbarr{
+        display:block;
+          width: 70%;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+
+  
+    
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+    .dropdownn {
+        float: none;
+margin: auto;
+    overflow: hidden;
+  background: linear-gradient(to left, #003366 18%, #0000ff 102%);
+    
+    }
+ 
+
+
+
+#gly a
+{
+color: white;
+
+
+}
+
+
+</style>
+
+
+
+<div style="width:74%; padding-top: 250px;padding-left: 118px;margin-left: 150px;">
+  <nav class="navbar navbar-inverse"  style="background-color: transparent;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+
+          <div class="navbarr nav navbar-nav">
+
+            <div class="dropdownn">
+
+              <button style="font-weight: bold;" class="dropbtn"><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+                Latest News
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdownn-content">
+
+                <div class="row">
+
+
+                 <div class="column">
+                  <h3><i class="fa fa-plane" aria-hidden="true"></i>
+                  By State</h3>
+                  <a href="citiess.php">Punjab</a>
+                  <a href=" Postpage.php ">Sindh</a>
+                  <a href=" Postpage.php ">Baluchistan</a>
+                  <a href=" Postpage.php ">KPK</a>
+                  <a href=" Postpage.php ">FATA</a>
+                  <a href=" Postpage.php ">Gilgit Baltistan</a>
+                  <a href=" Postpage.php ">Azad Kashmir</a>
+                </div>
+
+                <div class="column">
+                  <h3><i class="fa fa-map-marker" aria-hidden="true"></i>
+                  By city</h3>
+                  <a href="Postpage.php">Attock</a>
+                  <a href="Postpage.php">Bahawlpur</a>
+                  <a href="Postpage.php">Bahwalnagr</a>
+                  <a href="Postpage.php">Chishtian</a>
+                  <a href="Postpage.php">Bhakkar</a>
+                  <a href="Postpage.php">Chakwal</a>
+                  <a href="Postpage.php">Chinniot</a>
+                </div>
+
+
+
+                <div class="column">
+                  <h3><i class="fa fa-map-marker" aria-hidden="true"></i>
+                  By City</h3>
+                  <a href="Postpage.php">Islamabad</a>
+                  <a href="Postpage.php">Karachi</a>
+                  <a href="Postpage.php">Lahore</a>
+                  <a href="Postpage.php">Peshawar</a>
+                  <a href="Postpage.php">Quetta</a>
+                  <a href="Postpage.php">Multan</a>
+                  <a href="Postpage.php">Rawalpindi</a>
+                </div>
+
+
+
+                <div class="column">
+                  <h3><i class="fa fa-map-marker" aria-hidden="true"></i> By city</h3>
+                  <a href="Postpage.php">Mian Channu</a>
+                  <a href="Postpage.php">Khanewal</a>
+                  <a href="Postpage.php">Kot Addu</a>
+                  <a href="Postpage.php">Muzaffargarh</a>
+                  <a href="Postpage.php">Layyah</a>
+                  <a href="Postpage.php">Chowk Azam</a>
+                  <a href="Postpage.php">Mian Wali</a>
+                </div>
+                <div class="column">
+                  <h3><i class="fa fa-map-marker" aria-hidden="true"></i> By city</h3>
+                  <a href="Postpage.php">Mian Channu</a>
+                  <a href="Postpage.php">Khanewal</a>
+                  <a href="Postpage.php">Kot Addu</a>
+                  <a href="Postpage.php">Muzaffargarh</a>
+                  <a href="Postpage.php">Layyah</a>
+                  <a href="Postpage.php">Chowk Azam</a>
+                  <a href="Postpage.php">Mian Wali</a>
+                </div>
+                <div class="column">
+                  <h3><i class="fa fa-map-marker" aria-hidden="true"></i> By city</h3>
+                  <a href="Postpage.php">Sahiwal</a>
+                  <a href="Postpage.php">Vehari</a>
+                  <a href="Postpage.php">Mankera</a>
+                  <a href="Postpage.php">Jehlum</a>
+                  <a href="Postpage.php">Kasur</a>
+                  <a href="Postpage.php">Sheikhupura</a>
+                  <a href="Postpage.php">Pattoki</a>
+                </div>
+
+              </div>
+            </div>
+            
+          </div> 
+
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">World
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content" style="margin-left:18%;width: 50%;">
+
+              <div class="row">
+                <div class="column">
+                  <h3><i class="fa fa-globe" aria-hidden="true"></i>
+                  Asia</h3>
+                  <a href="Postpage.php">Japan</a>
+                  <a href="Postpage.php">China</a>
+                  <a href="Postpage.php">India</a>
+                  <a href="Postpage.php">Singapore</a>
+                  <a href="Postpage.php">Malaysia</a>
+                  <a href="Postpage.php">Kuwait</a>
+                  <a href="Postpage.php">Iran</a>
+                  <a href="Postpage.php">Siri Lanka</a>
+                </div>
+                <div class="column">
+                  <h3><i class="fa fa-globe" aria-hidden="true"></i>
+                  Europe</h3>
+
+                  <a href="Postpage.php">UK</a>
+                  <a href="Postpage.php">Sweden</a>
+                  <a href="Postpage.php">Spain</a>
+                  <a href="Postpage.php">Germany</a>
+                  <a href="Postpage.php">Italy</a>
+                  <a href="Postpage.php">Austria</a>
+                  <a href="Postpage.php">France</a>
+                  <a href="Postpage.php">Portugal</a>
+                </div>
+
+
+                <div class="column">
+                  <h3><i class="fa fa-globe" aria-hidden="true"></i>
+                  America</h3>
+                  <a href="Postpage.php">Canada</a>
+                  <a href="Postpage.php">Brazil</a>
+                  <a href="Postpage.php">Mexico</a>
+                </div>
+                <div class="column">
+                  <h3><i class="fa fa-globe" aria-hidden="true"></i>
+                  Africa</h3>
+                  <a href="Postpage.php">Kenya</a>
+                  <a href="Postpage.php">Ghana</a>
+                  <a href="Postpage.php">Liberia</a>
+                  <a href="Postpage.php">Others</a>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Tech
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content" style="margin-left:27%;">
+
+              <div class="row">
+                <div class="column">
+                  <h3><i class="fa fa-desktop" aria-hidden="true"></i>
+                  Computing</h3>
+                  <a href="Postpage.php">Applications</a>
+                  <a href="Postpage.php">Hardware</a>
+                  <a href="Postpage.php">Data Managment</a>
+                  <a href="Postpage.php">Operating systems</a> 
+
+
+                </div>
+                <div class="column">
+                  <h3><i class="fa fa-internet-explorer" aria-hidden="true"></i>
+                  Internet</h3>
+
+                  <a href="Postpage.php">Internet of things</a>
+                  <a href="Postpage.php">Social Networking</a>
+                  <a href="Postpage.php">Web apps</a>
+                  <a href="Postpage.php">Tech online</a> 
+
+
+
+                </div> <div class="column">
+                  <h3><i class="fa fa-laptop" aria-hidden="true"></i>
+                  IT</h3>
+
+                  <a href="Postpage.php">Developers</a>
+                  <a href="Postpage.php">Leadership</a>
+                  <a href="Postpage.php">Network Management</a>
+                  <a href="Postpage.php">Trends</a> 
+
+
+
+                </div> <div class="column">
+                  <h3><i class="fa fa-mobile" aria-hidden="true"></i>
+                  Mobile Tech</h3>
+
+                  <a href="Postpage.php">Mobile Apps</a>
+                  <a href="Postpage.php">Smartphones</a>
+                  <a href="Postpage.php">Tablets</a>
+                  <a href="Postpage.php">Wireless </a>
+
+
+
+
+                </div>
+
+
+                <div class="column">
+                  <h3><i class="fa fa-shield" aria-hidden="true"></i>
+                  Security</h3>
+                  <a href="Postpage.php">Cyber Security</a>
+                  <a href="Postpage.php">Privacy</a>
+                  <a href="Postpage.php">Hacking</a>
+                  <a href="Postpage.php">Malware</a>
+
+                </div>
+                <div class="column">
+                  <h3><i class="fa fa-firefox" aria-hidden="true"></i>
+                  Trending</h3>
+                  <a href="Postpage.php">Gaming</a>
+                  <a href="Postpage.php">Home tech</a>
+                  <a href="Postpage.php">Virtual Reality</a>
+                  <a href="Postpage.php">Robotics</a>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>     
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Business
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+
+
+
+              <div class="column" style="margin-left:36%; width: 30%; ">
+                <a href="Postpage.php"><i class="fa fa-usd" aria-hidden="true"></i>
+
+                Finance</a>
+                <a href="Postpage.php"><i class="fa fa-money" aria-hidden="true"></i> Economy</a>
+                <a href="Postpage.php"><i class="fa fa-etsy" aria-hidden="true"></i>
+                Enterpreneurship</a>
+                <a href="Postpage.php"><i class="fa fa-line-chart" aria-hidden="true"></i>
+                Gold Rates</a>
+                <a href="Postpage.php"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                Currency Rates</a>
+                <a href="Postpage.php"><i class="fa fa-area-chart" aria-hidden="true"></i>
+                Stock Exchannge</a>
+
+
+              </div>
+            </div>
+
+          </div> 
+
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Education
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+
+
+
+              <div class="column" style="margin-left:49%;width: 30%;">
+                <a href="Postpage.php"><i class="fa fa-file-o" aria-hidden="true"></i>
+                Board Exams</a>
+                <a href="Postpage.php"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                Admissions</a>
+                <a href="Postpage.php"><i class="fa fa-file-o" aria-hidden="true"></i>
+                Enterance Exams</a>
+                <a href="Postpage.php"><i class="fa fa-file-word-o" aria-hidden="true"></i>
+                Results</a>
+                <a href="Postpage.php"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+
+                Jobs</a>
+              </div>
+            </div>
+
+          </div> 
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Sports
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+
+
+
+              <div class="column" style="margin-left:65%;width: 30%;">
+
+
+
+                <a href="Postpage.php"><i style="font-size:24px" class="fa"></i> Cricket</a>
+                <a href="Postpage.php"><i class="fa fa-futbol-o" aria-hidden="true"></i>
+                Football</a>
+                <a href="Postpage.php">Tennis</a>
+                <a href="Postpage.php">WWE</a>
+                <a href="Postpage.php"><i class="fa fa-futbol-o" aria-hidden="true"></i>
+                FIFA world cup 2018</a>
+              </div>
+
+
+
+            </div>
+
+          </div> 
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Lifestyle
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+
+
+
+
+
+              <div class="column" style="margin-left:75%;width: 30%;">
+                <a href="Postpage.php"><i class="fa fa-shopping-cart"></i> Fashion</a>
+                <a href="Postpage.php"><i class="fa fa-medkit"></i> Health & Fitness</a>
+                <a href="Postpage.php"><i class="fa fa-cutlery"></i> Food</a>
+                <a href="Postpage.php"><i class="fa fa-female"></i><i class="fa fa-male"></i> Family</a>
+                <a href="Postpage.php"><i class="fa fa-plane"></i> Auto & Travel</a>
+
+
+              </div>
+            </div>
+
+          </div> 
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Videos
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+
+
+
+              <div class="column" style="margin-left:85%; width: 30%;">
+
+
+
+                <a href="Postpage.php">Exclusive</a>
+                <a href="Postpage.php">Pakistan</a>
+                <a href="Postpage.php">World</a>
+                <a href="Postpage.php">Elections</a>
+                <a href="Postpage.php">Entertainment</a>
+                <a href="Postpage.php">Health</a>
+                <a href="Postpage.php">Fitness</a>
+                <a href="Postpage.php">Fashion</a>
+                <a href="Postpage.php">Technology</a>
+                <a href="Postpage.php">Educational</a>
+
+                
+                
+              </div>
+            </div>
+
+          </div> 
+          <div class="dropdownn">
+            <button style="font-weight: bold;" class="dropbtn">Politics
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+
+              <div class="column" style="margin-left:105%; width: 30%;">
+                <a href="Postpage.php">PTI</a>
+                <a href="Postpage.php">PPP</a>
+                <a href="Postpage.php">PMLN</a>
+                <a href="Postpage.php">PAT</a>
+                <a href="Postpage.php">JUI</a>
+                <a href="Postpage.php">Others</a>
+
+              </div>
+            </div>
+          </div> 
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</nav>

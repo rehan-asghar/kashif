@@ -1,0 +1,270 @@
+
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<title>Welcome to The News Bang</title>
+
+
+   
+
+      
+ 
+      
+      </style>
+  </head>
+<?php
+$page_title='Home Page';
+include('header.html'); 
+?>
+  <body  style="background-color: white">
+
+
+
+    <!-- Page Content -->
+    <div class="container" style="width:90%; background-color: white;">
+
+   
+          <!-- Comments Form -->
+          <div class="card my-4 col-lg-8">
+
+                        <h4 class="card-header">Contact us:</h4>
+
+
+            <div class="card-body">
+             <form action="" onsubmit="return validation()" method="post" enctype="multipart/form-data" >
+  
+
+  <label for="user" class="font-weight-bold"> Username: </label>
+          <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+          <span id="username" class="text-danger font-weight-bold"> </span>
+
+
+
+    <br>
+  
+     
+    <label for="lastname"><b>Last Name</b></label>
+    <input type="text"  class="form-control"  placeholder="Enter Last Name" name="" autocomplete="off" Id="lname">
+     <span id="lastname" class="text-danger font-weight-bold"></span>
+    <br>
+    <label for="name"><b>Category</b></label>
+    <input type="text"   class="form-control"  placeholder="Enter Category" autocomplete="off" name="4" Id="cat"  >
+       <span id="cate" class="text-danger font-weight-bold"></span>
+    <br>
+ <label for="Messsage"><b>Messsage</b></label>
+      <textarea class="form-control" rows="5" name="5" Id="msg" autocomplete="off"  ></textarea>
+   <span id="msgs" class="text-danger font-weight-bold"></span>
+<br>
+
+    <div class="clearfix">
+      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+    </div>
+        </div>  
+    </div>
+</form>
+
+
+
+</div>
+
+    
+            </div>
+          </div>
+
+   
+
+
+<style type="">
+  
+ input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+select{
+    
+    
+    width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+</style>
+
+
+      </div>
+      <!-- /.row -->
+
+   
+    <!-- /.container -->
+
+    <!-- Footer -->
+ 
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script type="text/javascript">
+
+    function validation(){
+
+      var user = document.getElementById('user').value;
+var lname=document.getElementById('lname').value;
+
+var msgg=document.getElementById('msg').value;
+
+var categ=document.getElementById('cat').value;
+
+      if(user == ""){
+        document.getElementById('username').innerHTML =" ** Please fill the username field";
+        return false;
+      }
+    
+      if((user.length <= 2) || (user.length > 20)) {
+        document.getElementById('username').innerHTML =" ** Username lenght must be between 2 and 20";
+        return false; 
+      }
+      if(!isNaN(user)){
+        document.getElementById('username').innerHTML =" ** only characters are allowed";
+        return false;
+      }
+
+
+
+if (lname == "") {
+
+document.getElementById('lastname').innerHTML="**yeh b fill karo";
+return false;
+
+
+}
+    if((lname.length <= 2) || (lname.length > 20)) {
+        document.getElementById('lastname').innerHTML =" ** Username lenght must be between 2 and 20";
+        return false; 
+      }
+      if(!isNaN(lname)){
+        document.getElementById('lastname').innerHTML =" ** only characters are allowed";
+        return false;
+      }
+
+      if (msgg == "") {
+
+document.getElementById('msgs').innerHTML="**yeh b fill karo";
+return false;
+
+
+}
+    if((msgg.length <= 2) || (msgg.length > 20)) {
+        document.getElementById('msgs').innerHTML =" ** Username lenght must be between 2 and 20";
+        return false; 
+      }
+      if(!isNaN(msgg)){
+        document.getElementById('msgs').innerHTML =" ** only characters are allowed";
+        return false;
+      }
+
+if (categ == "") {
+
+document.getElementById('cate').innerHTML="**email do"
+return false;
+
+
+
+}
+
+
+    }
+
+
+
+</script>
+  </body>
+
+</html>
+

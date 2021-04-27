@@ -1,0 +1,208 @@
+  <style>
+
+
+
+
+
+
+#myFooter {
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+#myFooter .fa {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #182c39;
+    border-radius: 51%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#myFooter .fa-facebook:hover {
+    color: #2b55ff;
+}
+
+#myFooter .fa-facebook:focus {
+    color: #2b55ff;
+}
+
+#myFooter .fa-google-plus:hover {
+    color: red;
+}
+
+#myFooter .fa-google-plus:focus {
+    color: red;
+}
+
+#myFooter .fa-twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .fa-twitter:focus {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+
+
+
+
+</style>
+
+<footer id="myFooter" style="background: linear-gradient(to right, #000099 18%, #0099cc 102%);
+">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h5>News</h5>
+                    <ul>
+                        <li><a href="#">Headlines</a></li>
+                        <li><a href="#">Pakistan</a></li>
+                        <li><a href="#">By State</a></li>
+                        <li><a href="#">Your City</a></li>
+                        <li><a href="#">World</a></li>
+                               <li><a href="#">Technology</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                               <li><a href="#">Business</a></li>
+                        
+                           <li><a href="#">Crime</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5  >About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                                  <li><a href="#">Suggestions</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5 >Videos</h5>
+                    <ul>
+                        <li><a href="#">Exclusive</a></li>
+                        <li><a href="#">Pakistan</a></li>
+                        <li><a href="#">World</a></li>
+                               <li><a href="#">Elections</a></li>
+                               <li><a href="#">Entertainment</a></li>
+                               <li><a href="#">Health</a></li>
+                             <li><a href="#">Fitness</a></li>
+                               <li><a href="#">Fashion</a></li>
+                             <li><a href="#">Technology</a></li>
+                             <li><a href="#">Educational</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5 >Legal</h5>
+                    <ul>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Advertise With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Here we use the Google Embed API to show Google Maps. -->
+            <!-- In order for this to work in your project you will need to generate a unique API key.  -->
+            <iframe id="map-container" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyAkSphQH1Xk_AZtS2eAEW1fpz-ndrAmkYs" >
+            </iframe>
+        </div>
+        <div class="social-networks">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <div class="footer-copyright" style="background-color: #070D31;">
+            <p>© 2021 Copyright Text </p>
+        </div>
+    </footer>
