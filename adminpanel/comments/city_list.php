@@ -15,10 +15,13 @@ include("../../connection.php");
 		<?php
 		$srno=1;
 $qry="SELECT a1.id,a3.user_name,a2.news_title,a1.comment FROM comments a1 inner join news_cat a2 on a1.item_id=a2.item_id inner join users a3 on a1.user_id=a3.user_id";
+
   $res=mysqli_query($connection,$qry);
+
 if (mysqli_num_rows($res)> 0) {
 
 while ($row=mysqli_fetch_array($res)) {
+
 		$id=$row['id'];
         echo '
 		<tr>

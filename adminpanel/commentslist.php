@@ -85,7 +85,7 @@ var div="list_load";
 load_list(url,div);
 });
 </script>
-<script src="comment/city.js" id="script-resource-8"></script>
+<script src="comments/city.js" id="script-resource-8"></script>
 <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
 <script src="assets/modules/dropzonejs/min/dropzone.min.js"></script>
 <script src="js/page/components-multiple-upload.js"></script>

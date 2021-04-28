@@ -32,7 +32,7 @@ while ($row=mysqli_fetch_array($res)) {
 		Action <span class="caret"></span>
 		</button>
         <div class="dropdown-menu">
-		<a class="dropdown-item" href="javascipt:" onClick="del('comments/del.php','edit','<?php echo $id;?>','comments/city_list.php','list_load');">Delete</a>
+		<a class="dropdown-item" href="javascipt:" onClick="del('contact/del.php','edit','<?php echo $id;?>','contact/city_list.php','list_load');">Delete</a>
 		</div>
 		</div>
 		</td>			
