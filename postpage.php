@@ -121,6 +121,7 @@ margin-top: 10px;
       <h1 class="my-4">Latest News about
 
 <?php 
+$itemid = "";
 if (isset($_GET['elections'])) {
 
 echo "Elections";
@@ -146,8 +147,9 @@ elseif ((isset($_GET['geo']))) {
 echo "TV channels";
 $itemid='1010106';
 }
-///////////related news
-$q="update users set user_presence='".$itemid."' where user_id='".$_SESSION['user_id']."'";
+///////////related news4
+$session_id = (isset($_SESSION['user_id']))? $_SESSION['user_id']: 0;
+$q="update users set user_presence='".$itemid."' where user_id='".$session_id."'";
 $r=mysqli_query($connection,$q);
 ///////////
 

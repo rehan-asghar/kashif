@@ -8,19 +8,28 @@ $db_name="newsbang";
 // Create connection
 $connection = new mysqli($hostname, $username, $password,$db_name);
 /////////views
-$q="SELECT * FROM news_cat where item_id='".$_GET['item_id']."'";
+
+
+$item_id = (isset($_GET['item_id']))? $_GET['item_id']: 0;
+$session_id = (isset($_SESSION['user_id']))? $_SESSION['user_id']: 0;
+
+
+$q="SELECT * FROM news_cat where item_id='".$item_id."'";
 $r=mysqli_query($connection,$q);
 $row=mysqli_fetch_array($r);
-$category=$row['news_cate'];
-$views=$row['views']+1;
-////////related news
-setcookie("category", "$category", time()+30*24*60*60,'/');
-$_COOKIE["category"]=$category;
-$q="update users set user_presence='".$_GET['item_id']."' where user_id='".$_SESSION['user_id']."'";
-$r=mysqli_query($connection,$q);
-///////view incremeNt
-$q="update news_cat set views='$views' where item_id='".$_GET['item_id']."'";
-$r=mysqli_query($connection,$q);
+if($row != null ){
+  $category=$row['news_cate'];
+  $views=$row['views']+1;
+  ////////related news
+  setcookie("category", "$category", time()+30*24*60*60,'/');
+  $_COOKIE["category"]=$category;
+  $q="update users set user_presence='".$item_id."' where user_id='".$session_id."'";
+  $r=mysqli_query($connection,$q);
+  ///////view incremeNt
+  $q="update news_cat set views='$views' where item_id='".$item_id."'";
+  $r=mysqli_query($connection,$q);
+}
+
 ?>
 
 
