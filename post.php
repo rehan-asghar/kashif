@@ -108,7 +108,7 @@ include('header.php');
 
 
     <!-- Page Content -->
-    <div class="container" style="width:90%; background-color: white;float:left;margin-left:-2%">
+    <div class="container" style="width:100%;background-color:white;text-align:center;">
 
       <div class="row">
 

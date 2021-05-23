@@ -103,7 +103,7 @@ margin-top: 10px;
 <div style="width: 8.5%;float:left;">
 <a href="https://www.google.com" target="_blank"><img style="width: 72%" src="img/adds.png"></a>
 </div>
-<div class="container  " style="background-color:white;float:left;margin-left: -2%">
+<div class="container  " style="width:100%;background-color:white;text-align:center;">
 
  
 
